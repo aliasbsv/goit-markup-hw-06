@@ -149,6 +149,14 @@ body {
 
   .mobil-menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .mobil-page-nav {
+    padding-top: 72px;
+    margin-bottom: auto;
   }
 
   .mobil-close-btn {
@@ -179,11 +187,6 @@ body {
 
   .mobil-close-btn:hover > .mobil-close-btn-icon {
     fill: #ffffff;
-  }
-
-  .mobil-page-nav {
-    padding-top: 72px;
-    margin-bottom: auto;
   }
 
   .mobil-nav-menu {
@@ -242,6 +245,7 @@ body {
     display: flex;
     gap: 40px;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .mob-li-soc-block {
