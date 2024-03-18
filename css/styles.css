@@ -98,12 +98,6 @@ body {
 }
 
 .text-studio {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #2e2f42;
 }
 /* Smartphone */
@@ -140,11 +134,13 @@ body {
     transition: opacity 250ms linear, visibility 250ms linear;
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
   }
 
   .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .mobil-menu-container {
@@ -272,7 +268,6 @@ body {
     fill: #f4f4fd;
   }
 }
-
 /* =========== END Mobile menu styles =========== */
 
 /* Tablet */
@@ -349,7 +344,7 @@ body {
 
   .address-link {
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.7;
     letter-spacing: 0.04em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -363,16 +358,23 @@ body {
   .page-link-mail {
     margin-bottom: 12px;
   }
+
+  .page-link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1158px) {
   .logo {
-    margin-right: 176px;
+    margin-right: 76px;
   }
 
   .page-link {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
 
